@@ -17,4 +17,8 @@ const LogoContainer = styled.div`
   align-items: center;
 `;
 
-const LogoIMG = styled.img``;
+const LogoIMG = styled.img`
+  &:hover {
+    cursor: pointer;
+  }
+`;

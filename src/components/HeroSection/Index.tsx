@@ -28,8 +28,8 @@ export default function HeroSection() {
 
 const HeroContainer = styled.div`
   margin-top: 2em;
-  width: 80%;
-  height: 500px;
+  width: 100%;
+  min-height: 680px;
   display: flex;
   justify-content: space-between;
 `;
@@ -42,12 +42,16 @@ const LeftSide = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
 `;
 
 const RightSide = styled.div`
-  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
   position: relative;
+  overflow: visible;
 `;
 
 const Title = styled.h1`
@@ -64,10 +68,10 @@ const Slogan = styled.h2`
 `;
 
 const WorkingIMG = styled.img`
-  width: 200%;
-  position: absolute;
+  width: 120%;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 `;
 
 const ButtonContainer = styled.div`

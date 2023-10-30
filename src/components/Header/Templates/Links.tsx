@@ -35,4 +35,9 @@ const Link = styled.a`
   padding: 0 1em;
   font-weight: 700;
   color: hsl(0, 0%, 50%);
+  opacity: 0.7;
+  &:hover {
+    color: inherit;
+    opacity: 1;
+  }
 `;

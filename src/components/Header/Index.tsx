@@ -24,7 +24,7 @@ export default function Header() {
 const HeaderContainer = styled.div`
   /* padding: 1rem; */
   width: 100%;
-  margin-top: 2em;
+  margin-top: 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
