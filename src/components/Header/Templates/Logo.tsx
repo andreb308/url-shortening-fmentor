@@ -12,6 +12,9 @@ export default function Logo() {
 
 // STYLES
 
-const LogoContainer = styled.div``;
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const LogoIMG = styled.img``;

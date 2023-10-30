@@ -8,14 +8,35 @@ export default function Header() {
   return (
     <>
       <HeaderContainer>
-        <Logo />
-        <Links />
-        <Buttons />
+        <FlexStart>
+          <Logo />
+          <Links />
+        </FlexStart>
+
+        <FlexEnd>
+          <Buttons />
+        </FlexEnd>
       </HeaderContainer>
     </>
   );
 }
 
-export const HeaderContainer = styled.div`
+const HeaderContainer = styled.div`
+  /* padding: 1rem; */
+  width: 100%;
+  margin-top: 2em;
+  align-items: center;
+  display: flex;
   flex-direction: row;
+`;
+
+const FlexEnd = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: green; */
+  width: 50%;
+`;
+const FlexStart = styled.div`
+  display: flex;
+  width: 50%;
 `;
