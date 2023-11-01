@@ -18,7 +18,7 @@ const Container = styled.div`
   /* align-items: center; */
   justify-content: center;
   background-color: rgba(239, 241, 247, 255);
-  min-height: 1000px;
+  /* min-height: 1000px; */
   width: 100%;
   position: relative;
 `;

@@ -3,6 +3,7 @@ import Header from "./components/Header/Index";
 import HeroSection from "./components/HeroSection/Index";
 import styled from "styled-components";
 import SubSection from "./components/SubSection/Index";
+import StatsSection from "./components/StatsSection/Index";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HeroSection />
       </Main>
       <SubSection />
+      <StatsSection />
     </Container>
   );
 }
