@@ -5,15 +5,15 @@ export default function Links() {
   const navbarLinks = [
     {
       name: "Features",
-      link: "/test1",
+      link: "/",
     },
     {
       name: "Pricing",
-      link: "/test2",
+      link: "/",
     },
     {
       name: "Resources",
-      link: "/test3",
+      link: "/",
     },
   ];
   return (
@@ -29,6 +29,10 @@ const LinksContainer = styled.div`
   margin-left: 1em;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Link = styled.a`

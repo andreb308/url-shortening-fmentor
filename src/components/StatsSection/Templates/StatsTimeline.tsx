@@ -46,4 +46,15 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2rem; */
+  }
 `;

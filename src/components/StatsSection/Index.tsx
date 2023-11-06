@@ -25,6 +25,10 @@ const Container = styled.div`
   width: 80%;
   position: relative;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Background = styled.div`

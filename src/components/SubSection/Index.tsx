@@ -21,4 +21,7 @@ const Container = styled.div`
   /* min-height: 1000px; */
   width: 100%;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;

@@ -35,11 +35,19 @@ const URLInput = styled.input`
   font-size: 1.3rem;
   font-weight: 500;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* border: 2px solid red;
+  box-sizing: content-box; */
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    width: 80%;
+    height: 35%;
+  }
 `;
 
 const Container = styled.div`
-  position: absolute;
-  top: -70px; // metade da altura
+  position: relative;
+  margin-top: -70px; // metade da altura
   background-color: hsl(257, 27%, 26%);
   background-image: url(${URLBackgroundPath});
   background-size: cover;
@@ -50,10 +58,28 @@ const Container = styled.div`
   justify-content: center;
   gap: 2rem;
   border-radius: 12px;
+
+  @media (max-width: 768px) {
+    background-size: cover;
+    width: 90%;
+    height: 160px;
+    flex-direction: column;
+    margin-top: -80px;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
 `;
 
 export const ShortenButton = styled(Button)`
   padding: 0.7em 2em;
   font-size: 1.5rem;
   border-radius: inherit;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 0.5em 2em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 65%;
+  }
 `;

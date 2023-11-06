@@ -25,6 +25,10 @@ const Title = styled.h1`
   /* font-size: 3rem; */
   font-weight: 800;
   margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -34,4 +38,10 @@ const SubTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
 `;

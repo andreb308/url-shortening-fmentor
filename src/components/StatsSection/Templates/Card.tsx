@@ -22,6 +22,12 @@ const Container = styled.div<ContainerProps>`
   background-color: white;
   margin-top: calc((${(p) => p.index} * 100px));
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 300px;
+    min-height: 250px;
+    margin-top: 100px;
+  }
 `;
 
 const Title = styled.p`
@@ -29,6 +35,13 @@ const Title = styled.p`
   margin-left: 25px;
   font-size: 1.8rem;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-weight: 800;
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -43,6 +56,10 @@ const IconContainer = styled.div`
   background-color: hsl(260, 8%, 14%);
   width: 30px;
   height: 30px;
+
+  @media (max-width: 768px) {
+    left: 110px;
+  }
 `;
 
 const Icon = styled.img``;
@@ -52,6 +69,11 @@ const Description = styled.p`
   font-weight: 500;
   margin: 0 25px;
   color: hsl(0, 0%, 50%);
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 `;
 
 type CardProps = {

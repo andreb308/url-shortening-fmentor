@@ -26,6 +26,11 @@ export const Button = styled.a<ButtonProps>`
     props.callToAction ? "hsl(180, 66%, 49%)" : "transparent"};
   border-radius: 50px;
 
+  @media (max-width: 768px) {
+    // unwrap text
+    white-space: nowrap;
+  }
+
   &:hover {
     cursor: pointer;
     color: ${(props) => (props.callToAction ? "white" : "grey")};

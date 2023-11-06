@@ -35,8 +35,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc((84px * 1.2) + 2rem);
+  margin-top: 2rem;
   width: 70%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 /**********************************************************************************************/
@@ -52,6 +56,7 @@ function ShortenedListItem({ linkData }: ShortenedLinkProps) {
       <TestDiv>
         <LongLink>{longLink}</LongLink>
       </TestDiv>
+      <HR />
       <FlexEnd>
         <ShortenedLink>{shortenedLink}</ShortenedLink>
         <CopyButton>Copy</CopyButton>
@@ -59,6 +64,16 @@ function ShortenedListItem({ linkData }: ShortenedLinkProps) {
     </ShortenedLinkContainer>
   );
 }
+
+const HR = styled.hr`
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    width: calc(100% + 2rem);
+  }
+`;
 
 const ShortenedLinkContainer = styled.div`
   width: 70vw;
@@ -70,6 +85,13 @@ const ShortenedLinkContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const TestDiv = styled.div`
@@ -81,6 +103,10 @@ const TestDiv = styled.div`
   position: relative;
   white-space: nowrap;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const LongLink = styled.p`
   white-space: nowrap;
@@ -96,6 +122,13 @@ const LongLink = styled.p`
   /* padding: 0 50px; */
   /* height: 100%; */
   text-align: left;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 `;
 
 const ShortenedLink = styled.a`
@@ -107,6 +140,12 @@ const ShortenedLink = styled.a`
   /* margin: 0; */
   font-size: 1.5rem;
   color: hsl(180, 66%, 49%);
+
+  @media (max-width: 768px) {
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+  }
 `;
 
 const CopyButton = styled.button<CopyBtnProps>`
@@ -118,6 +157,11 @@ const CopyButton = styled.button<CopyBtnProps>`
   padding: 0.4em 2em;
   font-size: 1.2rem;
   border-radius: 6px;
+  font-weight: 800;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   &:hover {
     cursor: pointer;
@@ -131,4 +175,10 @@ const FlexEnd = styled.div`
 
   gap: 1rem;
   margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    width: 100%;
+    flex-direction: column;
+  }
 `;
