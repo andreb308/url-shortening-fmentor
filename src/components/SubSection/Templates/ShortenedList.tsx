@@ -66,11 +66,13 @@ function ShortenedListItem({ linkData }: ShortenedLinkProps) {
 }
 
 const HR = styled.hr`
+  display: none;
   width: 100%;
   margin: 0;
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
+    display: block;
     width: calc(100% + 2rem);
   }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Links() {
+export default function Navbar() {
   const navbarLinks = [
     {
       name: "Features",
@@ -17,15 +17,15 @@ export default function Links() {
     },
   ];
   return (
-    <LinksContainer>
+    <NavbarContainer>
       {navbarLinks.map((l) => (
         <Link href={l.link}>{l.name}</Link>
       ))}
-    </LinksContainer>
+    </NavbarContainer>
   );
 }
 
-const LinksContainer = styled.div`
+const NavbarContainer = styled.div`
   margin-left: 1em;
   display: flex;
   align-items: center;

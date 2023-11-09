@@ -28,6 +28,7 @@ const Container = styled.div`
   flex-direction: column;
   /* margin: 0 50px; */
   width: 100%;
+  overflow: hidden;
   min-height: 100vh;
 `;
 const Main = styled.div`

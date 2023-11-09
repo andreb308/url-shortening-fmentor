@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "./Templates/Logo";
-import Links from "./Templates/Links";
+import Navbar from "./Templates/Navbar";
 import Buttons from "./Templates/Buttons";
 
 export default function Header() {
@@ -10,7 +10,7 @@ export default function Header() {
       <HeaderContainer>
         <FlexStart>
           <Logo />
-          <Links />
+          <Navbar />
         </FlexStart>
 
         <FlexEnd>
